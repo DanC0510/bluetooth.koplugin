@@ -205,7 +205,7 @@ function Bluetooth:onBluetoothOn()
     local result = self:executeScript(script)
 
     if not result or result == "" then
-        self:popup(_("Error: No result from the Bluetooth script"))
+        self:popup(_("Error: No result from the Bluetooth script + " .. result))
         return
     end
 
